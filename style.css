@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:auto;
+    padding: auto;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+/*
+#17153b
+#2e236c
+#433d8b
+#c8acd6*/
+
+::-webkit-scrollbar{
+    display: none;
+}
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    /* padding: 2px % 2px 9%; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #17153b;
+    box-shadow: 10px 10px 10px rgb(0 0 0 /20%);
+}
+
+.logo{
+    display: flex;
+    width: 90px;
+    padding: 5px;
+}
+.logo img {
+    width: 56%;
+    transition: 0.3s ease-in-out;
+}
+.logo h3{
+    color: #e3acff;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.logo img:hover{
+    transform:rotate(95deg);
+}
+
+.logo h3:hover{
+    font-size: 27px;
+}
+nav a{
+    font-size: 20px;
+    margin-left: 4rem;
+    color: white;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: #c8acd6;
+    border-bottom: 2px solid #c8acd6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 77vh;
+    background: linear-gradient( -45deg, #17153b, #433d8b);
+}
+
+.content{
+    display: flex;
+    margin-top: 145px;
+    animation: fadeIn 1s;
+}
+.elemen img {
+    width: 85%;
+    height: 85%;
+}
+
+.teks{
+    margin-right: 20px;
+}
+.teks h3{
+    color: #e3acff;
+    font-size: 65px;
+}
+
+.teks p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.teks span{
+    color: #be90d6;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tombol{
+    padding: 15px 20px 15px 20px;
+    background: transparent;
+    border: 1px solid #be90d6;
+    color: #be90d6;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.tombol i{
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.tombol:hover{
+    background:#be90d6 ;
+    color:#433d8b;
+}
+
+.credit{
+    opacity: 20%;
+    color: #e3acff;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: end;
+}
+
+
+/*Learn Page*/
+#learn{
+    height: 170vh;
+}
+
+.content-2{
+    display: block;
+    margin-top: 145px;
+    animation: fadeIn 1s;
+}
+.content-2 h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 33px;
+}
+.learn1 p {
+    margin-left: 90px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 23px;
+    color: #be90d6;
+}
+
+.cards{
+    display: flex;
+    margin: 20px 50px 10px 50px;
+    width: 900px;
+}
+.card{
+    background-color: #ffffff;
+    width: 250px;
+    height: 55vh;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.card2{
+    background-color: #ffffffa4;
+    width: 250px;
+    height: 55vh;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.card3{
+    background-color: #ffffff4b;
+    width: 250px;
+    height: 55vh;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 75%;
+
+}
+.card h4{
+    background: #433d8b;
+    width: 70px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.card p{
+    color: black;
+    font-size: 15px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card2 h4 {
+    color: #474747;
+    margin-top: 100px;
+    font-size: 40px;
+}
+.card3 h4 {
+    color: #474747;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.card:hover{
+    width: 290px;
+}
+.card2:hover{
+    width: 290px;
+}
+.card3:hover{
+    width: 290px;
+}
+.soon{
+    text-align: center;
+    margin-top: 85px;
+    font-weight: 500;
+    font-size: 23px;
+    color: #be90d6;
+}
+
+/*Quiz pages*/
+#quiz{
+    height: 100vh;
+}
+
+.tombol1 i {
+    color: #ffffff;
+    font-size: 45px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.text {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0px;
+    position: relative;
+    color: #e3acff;
+    opacity: 0;
+    animation: fadeIn2 2s forwards, fadeOut 1.5s forwards; /* Tambahkan animasi fadeIn */
+    animation-delay: 0.5s, 2s; /* Tunda fadeIn dan fadeOut */
+}
+
+.text h3{
+    font-size: 70px;
+}
+
+.text p{
+    font-size: 30px;
+}
+
+.quize{
+    opacity: 0;
+    animation: fadeIn2 2s forwards;
+    animation-delay: 2.5s;
+}
+.quiz{
+    display: none;
+}
+.quiz.active {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 900px;
+    height: 50vh;
+    padding: 10px;
+
+}
+.quiztext {
+    font-weight: bold;
+    color: #e3acff;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.quizop{
+    display: flex;
+}
+.quizops{
+    margin-top: 90px;
+}
+.options input {
+    opacity: 0;
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 100px;
+    z-index: 1;
+}
+.options {
+    background-color: #17153b;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+.options span{
+    color: #e3acff;
+    font-size: 27px;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+.options2 input {
+    opacity: 0;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    z-index: 1;
+}
+.options2 {
+    background-color: #17153b;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+.options2 span{
+    color: #e3acff;
+    font-size: 27px;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+#result{
+    display: block;
+    text-align: center;
+}
+.options:hover {
+    background-color: #17153b8c;
+}
+.options:hover span{
+    color: #e3acff93;
+}
+.options2:hover {
+    background-color: #17153b8c;
+}
+.options2:hover span{
+    color: #e3acff93;
+}
+.result {
+    display: none;/* Awalnya disembunyikan */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    height: 55vh;
+    background-color: #17153b67;
+    border: 2px solid #433d8b;
+    border-radius: 8px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #e3acff;
+}
+
+.result p {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 20%;
+}
+.result span {
+    position: absolute;
+    display: block;
+}
+
+.result.active {
+    display: block;
+}
+
+.result a{
+    background: transparent;
+    padding: 5px 30px 5px 30px;
+    border-radius: 15px;
+    border: 1px solid #433d8b;
+    color: #bd90d6ae;
+    font-size: 27px;
+    font-weight: 500;
+    position: absolute;
+    left: 43%;
+    top: 80%;
+    transition: all 0.5s ease;
+}
+
+.result a:hover{
+    background: #17153b;
+    color: #e3acff;
+}
+/* About Pages */
+#about{
+    height: 125vh;
+}
+.content-4{
+    display: block;
+    margin-top: 145px;
+    animation: fadeIn 1s;
+}
+.text-1{
+    text-align: left;
+    margin: 30px;
+    color: #e3acff;
+}
+
+.container{
+    display: block;
+    margin-left: 30px;
+    margin-right: auto;
+    background: #c8acd6;
+    border-radius: 10px;
+    width: 70%;
+}
+.container p{
+    font-size: 20px;
+    padding: 4%;
+    color: #17153b;
+}
+.text-2{
+    text-align: right;
+    margin: 30px;
+    color: #e3acff;
+}
+
+.container2{
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+    background: #c8acd6;
+    border-radius: 10px;
+    width: 70%;
+    height: 43vh;
+}
+.container2 p{
+    text-align: right;
+    font-size: 20px;
+    padding: 5%;
+    color: #17153b;
+}
+.text-3 span{
+    display: flex;
+    margin-right: 50px;
+    align-items: end;
+    justify-content: end;
+}
+.text-3 a{
+    margin-right: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.src{
+    color: #17153b;
+}
+.src:hover {
+color: #433d8b;
+}
+
+@keyframes fadeIn {from{opacity: 0} to{opacity: 1}}
+
+@keyframes fadeIn2 {
+    from{
+        opacity: 0;
+        visibility: hidden; }
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes textTr {
+    0%{
+        margin-bottom: -40px;
+    }
+}
