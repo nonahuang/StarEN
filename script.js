@@ -31,15 +31,6 @@ function handleAnswer(selectedQuiz) {
     }
 }
 
-function displayResult() {
-    resultDiv.innerHTML = `Your score: ${score} out of ${quizzes.length}`;
-    resultDiv.classList.add('active');
-    quizzes.forEach(quiz => quiz.remove()); // Hapus semua pertanyaan
-}
-
-// Mulai kuis
-showQuiz();
-
 // Sembunyikan hasil skor di awal
 resultDiv.style.display = 'none';
 
@@ -49,3 +40,7 @@ function displayResult() {
     resultDiv.style.display = 'block'; // Tampilkan hasil
     quizzes.forEach(quiz => quiz.remove()); // Hapus semua pertanyaan
 }
+
+// Mulai kuis
+showQuiz();
+
